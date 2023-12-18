@@ -1,7 +1,7 @@
 import pandas as pd
 import paho.mqtt.client as mqtt
 from tb_device_mqtt import TBDeviceMqttClient
-from google.cloud import storage
+#from google.cloud import storage
 import json
 
 # MQTT broker settings
@@ -9,7 +9,7 @@ broker_address = "your_thingsboard_server"
 topic = "your_topic"
 
 # Google Cloud Storage settings
-storage_bucket = "your_bucket_name"
+#storage_bucket = "your_bucket_name"
 
 try:
     client = TBDeviceMqttClient(client_id="your_client_id")
