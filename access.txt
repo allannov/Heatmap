@@ -11,6 +11,42 @@ The web server can be set up on the Raspberry Pi itself. You can use a web serve
 5. Once you have accessed the `visualize_heatmap.js` file, the dynamic map should be displayed in the web browser, and you can interact with it by panning and zooming to view the WiFi heatmap.
 
 
+Set up a web server on your Raspberry Pi and access the generated heatmap from your PC
+
+1. Setting Up the Web Server:
+   - Install Apache, a popular web server software, on your Raspberry Pi. You can do this by running the following command in the terminal:
+     
+     sudo apt-get update
+     sudo apt-get install apache2 -y
+     
+
+2. Place the Files:
+   - Place all the necessary files (`main.py`, `index.html`, `visualize_heatmap.js`, and `heatmap.html`) in the web server's root directory. By default, the root directory for Apache on Raspberry Pi is `/var/www/html/`.
+
+3. Start the Web Server:
+   - Once the files are in place, start the Apache web server by running the following command:
+     
+     sudo service apache2 start
+     
+
+4. Accessing the Webpage:
+   - To access the webpage from your PC, you need to know the IP address of your Raspberry Pi. You can find this by running the following command on the Raspberry Pi:
+     
+     hostname -I
+     
+
+5. Access the Webpage:
+   - On your PC, open a web browser and enter the IP address of your Raspberry Pi. For example, if the IP address is 192.168.1.100, you would enter the following in the web browser's address bar:
+     
+     http://192.168.1.100/heatmap.html
+     
+
+
+[1] https://www.circuitbasics.com/introduction-to-web-servers/
+[2] https://www.instructables.com/Connecting-Your-Raspberry-Pi-to-the-Web/
+[3] https://www.seeedstudio.com/blog/2020/06/23/setup-a-raspberry-pi-web-server-and-easily-build-an-html-webpage-m/
+[4] https://forums.raspberrypi.com/viewtopic.php?t=343189
+[5] https://geekflare.com/how-to-create-heatmap-in-python/
 
 
 
