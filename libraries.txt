@@ -1,5 +1,5 @@
 1. pandas: A library for data manipulation and analysis.
 2. paho.mqtt.client: A library for MQTT communication.
 3. tb_device_mqtt: A library for integrating with ThingsBoard MQTT broker.
-4. google.cloud.storage: The Google Cloud Storage library for Python.
+- because not free 4. google.cloud.storage: The Google Cloud Storage library for Python.
 5. google.maps: The Google Maps JavaScript API.
